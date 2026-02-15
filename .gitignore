@@ -19,3 +19,5 @@ coverage*.out
 
 # Go workspace file
 go.work
+
+custom-gcl
