@@ -14,8 +14,7 @@ func testSlog() {
 	slog.Info("Starting server") // want "log message must start with a lower case letter"
 	slog.Info("server started!") // want "log message must not contain any special characters or emoji"
 	slog.Info("запуск сервера")  // want "log message must contains only English characters"
-
-	slog.Info("token: abc") // want "log message contains sensitive keyword \"token\""
+	slog.Info("token: abc")      // want "log message contains sensitive keyword \"token\""
 }
 
 func testZap() {
@@ -28,5 +27,5 @@ func testZap() {
 
 func testFalsePositive() {
 	var x MyLogger
-	x.Info("Starting server") // НЕ должно быть want — это не slog/zap
+	x.Info("Starting server")
 }
