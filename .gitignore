@@ -1,0 +1,21 @@
+.DS_Store
+.idea/
+.vscode/
+
+# Binaries and build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.test
+/bin/
+/dist/
+
+# Coverage and profiles
+*.cover
+coverage*.out
+*.prof
+
+# Go workspace file
+go.work
