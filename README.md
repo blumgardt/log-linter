@@ -1,4 +1,4 @@
-# loglint (log-linter)
+# log-linter
 
 AST/type-based линтер для логов `log/slog` и `go.uber.org/zap`, реализованный на `golang.org/x/tools/go/analysis`.
 
@@ -21,7 +21,7 @@ AST/type-based линтер для логов `log/slog` и `go.uber.org/zap`, �
 
 ---
 
-# Быстрый старт (локальный запуск анализатора)
+# Быстрый старт
 
 ```bash
 go test ./...
